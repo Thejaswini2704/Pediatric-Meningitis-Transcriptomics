@@ -1,0 +1,39 @@
+# Sequencing data
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+
+# Alignment files
+*.sam
+*.bam
+*.bai
+*.cram
+*.crai
+
+# Reference genome and annotation
+*.fa
+*.fasta
+*.fa.gz
+*.fasta.gz
+*.gtf
+*.gtf.gz
+*.gff
+*.gff3
+
+# Large data directories
+data/raw/
+data/fastq/
+data/reference/
+data/alignment/
+data/O6stringtie/
+
+# R temporary files
+.Rhistory
+.RData
+.Rproj.user/
+
+# Temporary/log files
+*.tmp
+*.lo
+
