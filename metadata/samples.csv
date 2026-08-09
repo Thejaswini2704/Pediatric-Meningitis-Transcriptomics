@@ -1,0 +1,16 @@
+sample_id,sra_id,group
+Viral01,SRR26890786,Viral
+Viral02,SRR26890787,Viral
+Viral03,SRR26890788,Viral
+Viral04,SRR26890789,Viral
+Viral05,SRR26890790,Viral
+Healthy01,SRR26890791,Healthy
+Healthy02,SRR26890792,Healthy
+Healthy03,SRR26890793,Healthy
+Healthy04,SRR26890794,Healthy
+Healthy05,SRR26890795,Healthy
+Bacterial01,SRR26890796,Bacterial
+Bacterial02,SRR26890797,Bacterial
+Bacterial03,SRR26890798,Bacterial
+Bacterial04,SRR26890799,Bacterial
+Bacterial05,SRR26890800,Bacterial
