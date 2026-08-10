@@ -1,39 +1,53 @@
-# Sequencing data
-*.fastq
-*.fastq.gz
-*.fq
-*.fq.gz
+# ==============================
+# Large input / intermediate data
+# ==============================
 
-# Alignment files
-*.sam
-*.bam
-*.bai
-*.cram
-*.crai
+data/stringtie/
+data/fastq/
+data/trimmed/
+data/alignment/
+data/bam/
+data/counts/
 
-# Reference genome and annotation
-*.fa
-*.fasta
-*.fa.gz
-*.fasta.gz
+# Large StringTie annotation
 *.gtf
-*.gtf.gz
 *.gff
 *.gff3
 
-# Large data directories
-data/raw/
-data/fastq/
-data/reference/
-data/alignment/
-data/O6stringtie/
+# ==============================
+# Large / intermediate results
+# ==============================
 
-# R temporary files
+results/stringtie/
+results/isoform_switching/
+results/differential_expression/
+
+# Temporary / intermediate biomarker files
+results/biomarkers/Bacterial_vs_Viral_Top100_log2CPM.csv
+results/biomarkers/Bacterial_vs_Viral_Top100_Candidate_Transcripts.csv
+results/biomarkers/Bacterial_vs_Viral_Stability_Selection.csv
+results/biomarkers/Stability_Selection_Results.csv
+results/biomarkers/Significant_Transcript_Counts.csv
+results/biomarkers/Significant_Transcript_IDs.txt
+results/biomarkers/Stable_Top20_Biomarkers.csv
+results/biomarkers/Top20_Correlation_Matrix.csv
+results/biomarkers/Top20_Expression_Matrix.csv
+results/biomarkers/Final_Top20_Biomarker_Database_Correlation.csv
+results/biomarkers/Biomarker_Functional_Landscape.csv
+
+# ==============================
+# R / temporary files
+# ==============================
+
 .Rhistory
 .RData
 .Rproj.user/
 
-# Temporary/log files
-*.tmp
-*.lo
+# ==============================
+# OS / editor files
+# ==============================
 
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
