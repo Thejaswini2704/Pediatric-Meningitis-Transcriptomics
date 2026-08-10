@@ -1,44 +1,53 @@
 # Pediatric Meningitis Transcriptomics
 
-
 ## Overview
 
-This project aims to identify transcript-level molecular biomarkers that can distinguish bacterial meningitis, viral meningitis, and healthy controls using RNA-seq data.
+This project investigates transcript-level molecular signatures associated with pediatric meningitis, with the primary objective of identifying transcript/isoform candidates that can distinguish **bacterial meningitis from viral meningitis**.
 
-## Study Groups
+The analysis integrates RNA-seq transcript quantification, transcript-level differential expression, and repeated stability selection using machine learning to prioritize robust transcript biomarkers.
 
-- 5 Viral meningitis samples
-- 5 Bacterial meningitis samples
+## Study Design
+
+The dataset contains **15 samples** across three study groups:
+
+- 5 Bacterial meningitis
+- 5 Viral meningitis
 - 5 Healthy controls
 
-## Planned Workflow
-FASTQ
-→ Quality Control
-→ HISAT2 Alignment
-→ StringTie Transcript Quantification
-→ Differential Expression
-→ Isoform Switching Analysis
-→ Machine Learning
-→ Biomarker Selection
-→ Functional Annotation
+The primary biomarker analysis focuses on the **Bacterial vs Viral** comparison.
 
-## Tools
+## Objectives
 
-- FastQC
-- MultiQC
-- HISAT2
-- StringTie
-- R
-- edgeR
-- limma
-- IsoformSwitchAnalyzeR
-- glmnet
-- caret
-- pROC
-- ggplot2
-- pheatmap
-- biomaRt
+1. Perform transcriptome profiling of pediatric meningitis samples.
+2. Identify transcript-level expression differences between bacterial and viral meningitis.
+3. Investigate infection-associated isoform/transcript patterns.
+4. Identify stable transcript candidates using repeated machine-learning-based stability selection.
+5. Annotate prioritized transcripts with their corresponding gene information.
+6. Explore expression patterns and relationships among the prioritized transcript biomarkers.
 
-## Current Status
+## Analysis Workflow
 
-The project is being developed as an end-to-end RNA-seq analysis workflow, starting from publicly available GEO/SRA sequencing data.
+```text
+RNA-seq FASTQ
+      ↓
+Quality Control
+      ↓
+HISAT2 Alignment
+      ↓
+StringTie Transcript Quantification
+      ↓
+Transcript Count Matrix
+      ↓
+Transcript-level Differential Expression
+      ↓
+Bacterial vs Viral Candidate Selection
+      ↓
+Repeated Stability Selection
+      ↓
+Top 20 Stable Transcript Candidates
+      ↓
+Transcript Annotation
+      ↓
+Expression / Correlation Analysis
+      ↓
+Heatmap and PCA Visualization
