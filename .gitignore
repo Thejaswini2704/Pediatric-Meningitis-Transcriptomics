@@ -51,3 +51,11 @@ results/biomarkers/Biomarker_Functional_Landscape.csv
 Thumbs.db
 *.swp
 *.swo
+
+# Exploratory / intermediate biomarker outputs
+figures/Top20_Biomarker_Heatmap.png
+figures/Top20_Correlation_Triangular.png
+figures/Top20_PCA_Separation.png
+
+results/biomarkers/Bacterial_vs_Viral_Significant_Transcripts.csv
+results/biomarkers/Bacterial_vs_Viral_Top100_IDs.txt
