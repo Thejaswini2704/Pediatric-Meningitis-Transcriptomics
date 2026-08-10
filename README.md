@@ -1,4 +1,4 @@
-****# Pediatric Meningitis Transcriptomics
+Pediatric Meningitis Transcriptomics
 
 This project investigates transcript-level molecular signatures associated with pediatric meningitis, with the primary objective of identifying transcript/isoform candidates that can distinguish **bacterial meningitis from viral meningitis**.
 
